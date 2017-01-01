@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">"Sport Timer "</string>
+    <string name="Sets">Sets</string>
+    <string name="Times">Times in set</string>
+    <string name="Work">Work time (sec)</string>
+    <string name="Rest">Rest time (sec)</string>
+    <string name="Between">Rest between sets (min)</string>
+    <string name="Save">Save</string>
+    <string name="Delay">Delay before start (sec)</string>
+    <string name="Saved">Choose saved program</string>
+    <string name="Start">Start</string>
+    <string name="NameProgram">Name the program</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Pause">Pause</string>
+    <string name="WorkoutName">Name this workout</string>
+    <string name="Unknown">UNKNOWN</string>
+    <string name="WasSaved">Was saved as </string>
+    <string name="delete">Delete</string>
+</resources>

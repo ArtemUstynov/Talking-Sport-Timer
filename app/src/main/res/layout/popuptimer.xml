@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <TextView
+            android:text=" "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" android:layout_marginTop="19dp"
+            android:elevation="1dp" android:textSize="24sp" android:id="@+id/tvState"/>
+    <Button
+            android:text="@string/Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancel"
+            android:background="@drawable/btn_shadow"
+            android:minWidth="100dip" android:minHeight="56dp"
+            android:layout_below="@+id/tvTimer"
+            android:layout_marginTop="13dp"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    <TextView
+            android:text="0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTimer" android:textSize="100sp"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/tvState" android:layout_centerHorizontal="true"/>
+    <Button
+            android:text="@string/Pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnPause" android:background="@drawable/btnsave_shadow"
+            android:minWidth="100dip" android:minHeight="56dp"
+            android:layout_below="@+id/btnCancel" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginTop="13dp"
+            android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
+</RelativeLayout>
