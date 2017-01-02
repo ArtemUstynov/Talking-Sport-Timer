@@ -14,11 +14,9 @@ public class DBHelper extends SQLiteOpenHelper {
 
     public static final String KEY_ID = "_id";
     public static final String KEY_NAME = "name";
-    public static final String KEY_SETS = "sets";
     public static final String KEY_TIMES_IN_SET = "timesInSet";
     public static final String KEY_WORK_TIME = "workTime";
     public static final String KEY_REST_TIME = "restTime";
-    public static final String KEY_BETWEEN_SETS = "betweenSets";
     public static final String KEY_DELAY = "delay";
 
     public DBHelper(Context context) {
@@ -30,11 +28,9 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL("create table " + TABLE_WORKOUTS +
                 " ( " + KEY_ID + " INTEGER PRIMARY KEY, " +
                 KEY_NAME + " text, " +
-                KEY_SETS + " integer, " +
                 KEY_TIMES_IN_SET + " integer, " +
                 KEY_WORK_TIME + " integer, " +
                 KEY_REST_TIME + " integer, " +
-                KEY_BETWEEN_SETS + " integer, " +
                 KEY_DELAY + " integer " + ");");
     }
 

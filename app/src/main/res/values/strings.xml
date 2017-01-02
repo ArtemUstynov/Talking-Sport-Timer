@@ -12,8 +12,14 @@
     <string name="NameProgram">Name the program</string>
     <string name="Cancel">Cancel</string>
     <string name="Pause">Pause</string>
+    <string name="Resume">Resume</string>
     <string name="WorkoutName">Name this workout</string>
     <string name="Unknown">UNKNOWN</string>
     <string name="WasSaved">Was saved as </string>
     <string name="delete">Delete</string>
+    <string name="error">Field empty or name taken</string>
+    <string name="prepare">Prepare</string>
+    <string name="workout">Work</string>
+    <string name="resting">Rest</string>
+    <string name="BetweenSets">Rest between sets</string>
 </resources>

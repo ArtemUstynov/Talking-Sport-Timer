@@ -61,11 +61,6 @@ public class PopUpSave extends Dialog implements View.OnClickListener {
                     } else
                         sport.contentValues.put(DBHelper.KEY_NAME, etSave.getText().toString());
 
-                    if (sport.etSets.getText().toString().equals(""))
-                        sport.contentValues.put(DBHelper.KEY_SETS, 0);
-                    else
-                        sport.contentValues.put(DBHelper.KEY_SETS, Integer.parseInt(sport.etSets.getText().toString()));
-
                     if (sport.etTimes.getText().toString().equals(""))
                         sport.contentValues.put(DBHelper.KEY_TIMES_IN_SET, 0);
                     else
@@ -80,11 +75,6 @@ public class PopUpSave extends Dialog implements View.OnClickListener {
                         sport.contentValues.put(DBHelper.KEY_REST_TIME, 0);
                     else
                         sport.contentValues.put(DBHelper.KEY_REST_TIME, Integer.parseInt(sport.etRest.getText().toString()));
-
-                    if (sport.etBetween.getText().toString().equals(""))
-                        sport.contentValues.put(DBHelper.KEY_BETWEEN_SETS, 0);
-                    else
-                        sport.contentValues.put(DBHelper.KEY_BETWEEN_SETS, Integer.parseInt(sport.etBetween.getText().toString()));
 
                     if (sport.etDelay.getText().toString().equals(""))
                         sport.contentValues.put(DBHelper.KEY_DELAY, 0);
@@ -105,20 +95,16 @@ public class PopUpSave extends Dialog implements View.OnClickListener {
                if (sport.cursor.moveToFirst()) {
                     int idIndex = sport.cursor.getColumnIndex(DBHelper.KEY_ID);
                 //    int nameIndex = sport.cursor.getColumnIndex(DBHelper.KEY_NAME);
-                    int setsIndex = sport.cursor.getColumnIndex(DBHelper.KEY_SETS);
                     int timesIndex = sport.cursor.getColumnIndex(DBHelper.KEY_TIMES_IN_SET);
                     int workIndex = sport.cursor.getColumnIndex(DBHelper.KEY_WORK_TIME);
                     int restIndex = sport.cursor.getColumnIndex(DBHelper.KEY_REST_TIME);
-                    int betweenIndex = sport.cursor.getColumnIndex(DBHelper.KEY_BETWEEN_SETS);
                     int delayIndex = sport.cursor.getColumnIndex(DBHelper.KEY_DELAY);
                     do {
                         Log.d("mLog", "ID = " + sport.cursor.getInt(idIndex) +
                                 ", name = " + sport.cursor.getString(nameIndex) +
-                                ", sets = " + sport.cursor.getString(setsIndex)+
                                 ", times = " + sport.cursor.getString(timesIndex)+
                                 ", work = " + sport.cursor.getString(workIndex)+
                                 ", rest = " + sport.cursor.getString(restIndex)+
-                                ", between = " + sport.cursor.getString(betweenIndex)+
                                 ", delay  = " + sport.cursor.getString(delayIndex));
                     } while (sport.cursor.moveToNext());
                 } else
