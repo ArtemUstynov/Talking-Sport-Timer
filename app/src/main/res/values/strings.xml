@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">"Sport Timer "</string>
+    <string name="app_name">"Talking Sport Timer "</string>
     <string name="Sets">Sets</string>
     <string name="Times">Times in set</string>
     <string name="Work">Work time (sec)</string>
@@ -22,4 +22,28 @@
     <string name="workout">Work</string>
     <string name="resting">Rest</string>
     <string name="BetweenSets">Rest between sets</string>
+    <string name="Finish">Finish</string>
+    <string name="Stop">Stop</string>
+    <string name="OneMinute">one minute</string>
+    <string name="TwoMinute">two minutes</string>
+    <string name="ThreeMinute">Three minutes</string>
+    <string name="FourMinute">Four minutes</string>
+    <string name="FiveMinute">Five minutes</string>
+     <string name="thirty">thirty seconds</string>
+    <string name="fifteen">fifteen seconds</string>
+    <string name="ten">ten</string>
+    <string name="five">Five</string>
+    <string name="four">four</string>
+    <string name="three">three</string>
+    <string name="two">two</string>
+    <string name="one">one</string>
+    <string name="Talk">Talk</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6005821014443790/6881135268</string>
+    <string name="ad_id_interstitial">ca-app-pub-6005821014443790/7939066067</string>
+    <string name="Before">Before you leave</string>
+    <string name="Doyou">Do you want to get rid of add and help developer?</string>
+    <string name="no">NO</string>
+    <string name="info">Important information</string>
+    <string name="missing">Important system  app is missing. Without it talking function will be unavailable. Download required application? After installing go to
+    setting -> language and input -> speech -> select google text-to-speech engine </string>
 </resources>

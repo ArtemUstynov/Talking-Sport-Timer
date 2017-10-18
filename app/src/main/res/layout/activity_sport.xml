@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/activity_sport"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -9,69 +11,38 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
-        tools:context="com.sporttimer.singlemind.sporttimer.com.sporttimer.singlemind.sport">
+        tools:context="com.sporttimeradfree.singlemind.Sport"
+        android:background="#c5cae9">
 
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:layout_alignTop="@+id/editText9" android:layout_alignLeft="@+id/etWork"
-            android:layout_alignStart="@+id/etWork" android:id="@+id/etRest"/>
     <TextView
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/_40sdp"
             android:inputType="textPersonName"
             android:text="@string/Work"
             android:ems="10"
             android:id="@+id/editText7"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="@dimen/_12sdp"
             android:layout_below="@+id/editText5" android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" android:layout_alignRight="@+id/editText5"
-            android:layout_alignEnd="@+id/editText5" android:textSize="22sp" android:textColor="@android:color/black"/>
+            android:layout_alignEnd="@+id/editText5" android:textSize="@dimen/_18sdp" android:textColor="@android:color/black"/>
     <TextView
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/_40sdp"
             android:inputType="textPersonName"
             android:text="@string/Rest"
             android:ems="10"
-            android:layout_marginTop="20dp" android:id="@+id/editText9" android:layout_below="@+id/editText7"
+            android:layout_marginTop="@dimen/_10sdp" android:id="@+id/editText9" android:layout_below="@+id/editText7"
             android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
             android:layout_alignRight="@+id/editText7" android:layout_alignEnd="@+id/editText7"
-            android:textSize="22sp" android:textColor="@android:color/black"/>
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
-            android:ems="10"
-            android:id="@+id/etWork"
-            android:layout_alignTop="@+id/editText7" android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" android:layout_alignLeft="@+id/etTimes"
-            android:layout_alignStart="@+id/etTimes"/>
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="numberSigned"
-            android:ems="10"
-            android:id="@+id/etTimes" android:layout_alignTop="@+id/editText5" android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_toRightOf="@+id/textView2" android:layout_toEndOf="@+id/textView2"/>
-    <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="numberSigned"
-            android:ems="10"
-            android:id="@+id/etDelay" android:layout_alignTop="@+id/textView2" android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_toEndOf="@+id/textView2"/>
+            android:textSize="@dimen/_18sdp" android:textColor="@android:color/black"/>
     <TextView
             android:layout_width="wrap_content"
-            android:layout_height="36dp"
+            android:layout_height="@dimen/_36sdp"
             android:inputType="textPersonName"
             android:text="@string/Times"
             android:ems="10"
-            android:layout_marginTop="30dp" android:id="@+id/editText5"
-            android:textSize="22sp"
+            android:layout_marginTop="@dimen/_10sdp" android:id="@+id/editText5"
+            android:textSize="@dimen/_18sdp"
             android:textColor="@android:color/black"
             android:layout_below="@+id/spSavedWorkauts" android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" android:layout_toLeftOf="@+id/etTimes"
@@ -79,54 +50,107 @@
     <TextView
             android:text="@string/Delay"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/_40sdp"
             android:id="@+id/textView2"
-            android:textSize="22sp" android:textAlignment="center"
+            android:textSize="@dimen/_18sdp" android:textAlignment="center"
             android:textColor="@android:color/black"
             android:layout_below="@+id/etRest" android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" android:layout_marginTop="22dp"/>
+            android:layout_alignParentStart="true" android:layout_marginTop="@dimen/_12sdp"/>
     <Button
             android:text="@string/delete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/btndelete_shadow"
-            android:layout_marginBottom="21dp" android:id="@+id/btnDelete" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_21sdp" android:id="@+id/btnDelete" android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
             android:layout_alignParentRight="true" android:layout_alignParentEnd="true"/>
     <Button
             android:text="@string/Save"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/_120sdp"
             android:id="@+id/btnSave"
-            android:layout_height="80dp"
+            android:layout_height="@dimen/_80sdp"
             android:fadingEdge="horizontal"
             android:background="@drawable/btn_shadow"
-            android:minWidth="140dp" android:layout_above="@+id/btnDelete" android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" android:layout_marginBottom="12dp"/>
+            android:minWidth="@dimen/_140sdp" android:layout_above="@+id/btnDelete" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginBottom="@dimen/_12sdp"
+        android:textSize="28sp" />
     <Button
             android:text="@string/Start"
             android:layout_width="wrap_content"
-            android:layout_height="80dp"
+            android:layout_height="@dimen/_80sdp"
             android:id="@+id/btnStart"
             android:background="@drawable/btnsave_shadow"
             android:fadingEdge="horizontal"
             android:layout_alignTop="@+id/btnSave" android:layout_toRightOf="@+id/btnSave"
             android:layout_alignParentRight="true" android:layout_alignParentEnd="true"
-            android:layout_marginLeft="20dp"/>
+            android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_alignBottom="@+id/btnSave"
+        android:textSize="28sp" />
     <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spSavedWorkauts" android:backgroundTint="#644c90e9" android:foreground="@color/colorPrimaryDark"
             android:foregroundTint="@color/colorPrimaryDark"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:layout_below="@+id/textView" android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:ems="10"
+            android:id="@+id/etDelay"
+            android:layout_alignBottom="@+id/textView2" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/etRest" android:layout_alignBottom="@+id/editText9" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_toRightOf="@+id/editText9"
+            android:layout_toEndOf="@+id/editText9"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/etWork"
+            android:layout_above="@+id/editText9" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_toRightOf="@+id/editText7"
+            android:layout_toEndOf="@+id/editText7"/>
+
+    <Switch
+            android:text="@string/Talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aSwitch"
+            android:layout_alignBaseline="@+id/textView" android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+        android:checked="true" />
+
     <TextView
             android:text="@string/Saved"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
             android:textColor="@android:color/black"
-            android:layout_marginTop="61dp"
-            android:layout_alignParentTop="true" android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" android:layout_marginRight="94dp" android:layout_marginEnd="94dp"/>
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_21sdp" android:layout_marginEnd="@dimen/_21sdp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:ems="10"
+            android:id="@+id/etTimes"
+        android:layout_above="@+id/editText7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
 </RelativeLayout>
